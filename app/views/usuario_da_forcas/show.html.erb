@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id usuario:</strong>
+  <%= @usuario_da_forca.id_usuario %>
+</p>
+
+<p>
+  <strong>Id sabre:</strong>
+  <%= @usuario_da_forca.id_sabre %>
+</p>
+
+<p>
+  <strong>Planeta origem:</strong>
+  <%= @usuario_da_forca.planeta_origem %>
+</p>
+
+<p>
+  <strong>Nome usuario:</strong>
+  <%= @usuario_da_forca.nome_usuario %>
+</p>
+
+<p>
+  <strong>Data nas:</strong>
+  <%= @usuario_da_forca.data_nas %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_da_forca_path(@usuario_da_forca) %> |
+<%= link_to 'Back', usuario_da_forcas_path %>

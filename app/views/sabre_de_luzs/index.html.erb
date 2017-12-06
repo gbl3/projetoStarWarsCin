@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sabre De Luzs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id sabre</th>
+      <th>Cristal</th>
+      <th>Local origem</th>
+      <th>Cor</th>
+      <th>Data criacao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sabre_de_luzs.each do |sabre_de_luz| %>
+      <tr>
+        <td><%= sabre_de_luz.id_sabre %></td>
+        <td><%= sabre_de_luz.cristal %></td>
+        <td><%= sabre_de_luz.local_origem %></td>
+        <td><%= sabre_de_luz.cor %></td>
+        <td><%= sabre_de_luz.data_criacao %></td>
+        <td><%= link_to 'Show', sabre_de_luz %></td>
+        <td><%= link_to 'Edit', edit_sabre_de_luz_path(sabre_de_luz) %></td>
+        <td><%= link_to 'Destroy', sabre_de_luz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sabre De Luz', new_sabre_de_luz_path %>
+<%= link_to 'voltar', root_path %>
+
+

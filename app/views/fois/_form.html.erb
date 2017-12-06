@@ -1,0 +1,27 @@
+<%= form_with(model: foi, local: true) do |form| %>
+  <% if foi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(foi.errors.count, "error") %> prohibited this foi from being saved:</h2>
+
+      <ul>
+      <% foi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario_m_sith %>
+    <%= form.text_field :id_usuario_m_sith, id: :foi_id_usuario_m_sith %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_usuario_j %>
+    <%= form.text_field :id_usuario_j, id: :foi_id_usuario_j %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

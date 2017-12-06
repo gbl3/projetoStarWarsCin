@@ -1,0 +1,2 @@
+class UtilityDroid < ApplicationRecord
+end

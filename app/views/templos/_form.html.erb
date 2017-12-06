@@ -1,0 +1,32 @@
+<%= form_with(model: templo, local: true) do |form| %>
+  <% if templo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(templo.errors.count, "error") %> prohibited this templo from being saved:</h2>
+
+      <ul>
+      <% templo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_templo %>
+    <%= form.text_field :id_templo, id: :templo_id_templo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome_templo %>
+    <%= form.text_field :nome_templo, id: :templo_nome_templo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :planeta %>
+    <%= form.text_field :planeta, id: :templo_planeta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

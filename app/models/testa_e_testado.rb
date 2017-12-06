@@ -1,0 +1,2 @@
+class TestaETestado < ApplicationRecord
+end

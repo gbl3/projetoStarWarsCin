@@ -1,0 +1,2 @@
+class Templo < ApplicationRecord
+end

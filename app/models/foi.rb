@@ -1,0 +1,2 @@
+class Foi < ApplicationRecord
+end

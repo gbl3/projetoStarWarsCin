@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_padawan: MyString
+  nome: MyString
+  planeta_origem: MyString
+
+two:
+  cod_padawan: MyString
+  nome: MyString
+  planeta_origem: MyString

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fois</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id usuario m sith</th>
+      <th>Id usuario j</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fois.each do |foi| %>
+      <tr>
+        <td><%= foi.id_usuario_m_sith %></td>
+        <td><%= foi.id_usuario_j %></td>
+        <td><%= link_to 'Show', foi %></td>
+        <td><%= link_to 'Edit', edit_foi_path(foi) %></td>
+        <td><%= link_to 'Destroy', foi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Foi', new_foi_path %>
+<%= link_to 'voltar', root_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_usuario_j: MyString
+  id_templo: MyString
+  cod_padawan: MyString
+  resultado: MyString
+  data_teste: 2017-12-06
+
+two:
+  id_usuario_j: MyString
+  id_templo: MyString
+  cod_padawan: MyString
+  resultado: MyString
+  data_teste: 2017-12-06

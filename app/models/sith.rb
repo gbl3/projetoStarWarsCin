@@ -1,0 +1,2 @@
+class Sith < ApplicationRecord
+end

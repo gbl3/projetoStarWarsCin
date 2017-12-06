@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_padawan: MyString
+  id_usuario_j: MyString
+  nome_pad: MyString
+  idade: MyString
+
+two:
+  cod_padawan: MyString
+  id_usuario_j: MyString
+  nome_pad: MyString
+  idade: MyString

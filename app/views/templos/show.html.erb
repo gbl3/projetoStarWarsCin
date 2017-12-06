@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id templo:</strong>
+  <%= @templo.id_templo %>
+</p>
+
+<p>
+  <strong>Nome templo:</strong>
+  <%= @templo.nome_templo %>
+</p>
+
+<p>
+  <strong>Planeta:</strong>
+  <%= @templo.planeta %>
+</p>
+
+<%= link_to 'Edit', edit_templo_path(@templo) %> |
+<%= link_to 'Back', templos_path %>

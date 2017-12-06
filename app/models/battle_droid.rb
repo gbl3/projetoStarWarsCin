@@ -1,0 +1,2 @@
+class BattleDroid < ApplicationRecord
+end

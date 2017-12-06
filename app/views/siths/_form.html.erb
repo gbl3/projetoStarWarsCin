@@ -1,0 +1,27 @@
+<%= form_with(model: sith, local: true) do |form| %>
+  <% if sith.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sith.errors.count, "error") %> prohibited this sith from being saved:</h2>
+
+      <ul>
+      <% sith.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.text_field :id_usuario, id: :sith_id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funcao %>
+    <%= form.text_field :funcao, id: :sith_funcao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

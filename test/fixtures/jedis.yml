@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_usuario_j: MyString
+  ordem: MyString
+  classe_jedi: MyString
+  idade: MyString
+
+two:
+  id_usuario_j: MyString
+  ordem: MyString
+  classe_jedi: MyString
+  idade: MyString

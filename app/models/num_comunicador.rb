@@ -1,0 +1,2 @@
+class NumComunicador < ApplicationRecord
+end

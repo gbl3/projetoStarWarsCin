@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Templos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id templo</th>
+      <th>Nome templo</th>
+      <th>Planeta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @templos.each do |templo| %>
+      <tr>
+        <td><%= templo.id_templo %></td>
+        <td><%= templo.nome_templo %></td>
+        <td><%= templo.planeta %></td>
+        <td><%= link_to 'Show', templo %></td>
+        <td><%= link_to 'Edit', edit_templo_path(templo) %></td>
+        <td><%= link_to 'Destroy', templo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Templo', new_templo_path %>
+<%= link_to 'voltar', root_path %>

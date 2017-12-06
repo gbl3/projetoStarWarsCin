@@ -1,0 +1,27 @@
+<%= form_with(model: crium, local: true) do |form| %>
+  <% if crium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(crium.errors.count, "error") %> prohibited this crium from being saved:</h2>
+
+      <ul>
+      <% crium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.text_field :id_usuario, id: :crium_id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_sabre %>
+    <%= form.text_field :id_sabre, id: :crium_id_sabre %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

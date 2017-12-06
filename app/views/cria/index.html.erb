@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cria</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id usuario</th>
+      <th>Id sabre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cria.each do |crium| %>
+      <tr>
+        <td><%= crium.id_usuario %></td>
+        <td><%= crium.id_sabre %></td>
+        <td><%= link_to 'Show', crium %></td>
+        <td><%= link_to 'Edit', edit_crium_path(crium) %></td>
+        <td><%= link_to 'Destroy', crium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Crium', new_crium_path %>
+<%= link_to 'voltar', root_path %>

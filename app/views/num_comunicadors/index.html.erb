@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Num Comunicadors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>N comunicador</th>
+      <th>Id usuario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @num_comunicadors.each do |num_comunicador| %>
+      <tr>
+        <td><%= num_comunicador.n_comunicador %></td>
+        <td><%= num_comunicador.id_usuario %></td>
+        <td><%= link_to 'Show', num_comunicador %></td>
+        <td><%= link_to 'Edit', edit_num_comunicador_path(num_comunicador) %></td>
+        <td><%= link_to 'Destroy', num_comunicador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Num Comunicador', new_num_comunicador_path %>
+<%= link_to 'voltar', root_path %>

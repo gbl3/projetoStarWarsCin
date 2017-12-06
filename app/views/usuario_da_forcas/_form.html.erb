@@ -1,0 +1,42 @@
+<%= form_with(model: usuario_da_forca, local: true) do |form| %>
+  <% if usuario_da_forca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario_da_forca.errors.count, "error") %> prohibited this usuario_da_forca from being saved:</h2>
+
+      <ul>
+      <% usuario_da_forca.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.text_field :id_usuario, id: :usuario_da_forca_id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_sabre %>
+    <%= form.text_field :id_sabre, id: :usuario_da_forca_id_sabre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :planeta_origem %>
+    <%= form.text_field :planeta_origem, id: :usuario_da_forca_planeta_origem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome_usuario %>
+    <%= form.text_field :nome_usuario, id: :usuario_da_forca_nome_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_nas %>
+    <%= form.date_select :data_nas, id: :usuario_da_forca_data_nas %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

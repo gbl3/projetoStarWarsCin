@@ -1,0 +1,42 @@
+<%= form_with(model: testa_e_testado, local: true) do |form| %>
+  <% if testa_e_testado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(testa_e_testado.errors.count, "error") %> prohibited this testa_e_testado from being saved:</h2>
+
+      <ul>
+      <% testa_e_testado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario_j %>
+    <%= form.text_field :id_usuario_j, id: :testa_e_testado_id_usuario_j %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_templo %>
+    <%= form.text_field :id_templo, id: :testa_e_testado_id_templo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_padawan %>
+    <%= form.text_field :cod_padawan, id: :testa_e_testado_cod_padawan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resultado %>
+    <%= form.text_field :resultado, id: :testa_e_testado_resultado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_teste %>
+    <%= form.date_select :data_teste, id: :testa_e_testado_data_teste %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

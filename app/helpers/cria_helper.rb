@@ -1,0 +1,2 @@
+module CriaHelper
+end

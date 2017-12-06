@@ -1,0 +1,27 @@
+<%= form_with(model: utility_droid, local: true) do |form| %>
+  <% if utility_droid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(utility_droid.errors.count, "error") %> prohibited this utility_droid from being saved:</h2>
+
+      <ul>
+      <% utility_droid.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_fabricacao %>
+    <%= form.text_field :id_fabricacao, id: :utility_droid_id_fabricacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :especialidade %>
+    <%= form.text_field :especialidade, id: :utility_droid_especialidade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

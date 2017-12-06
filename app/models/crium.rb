@@ -1,0 +1,2 @@
+class Crium < ApplicationRecord
+end

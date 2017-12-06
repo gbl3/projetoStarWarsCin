@@ -1,0 +1,27 @@
+<%= form_with(model: utiliza, local: true) do |form| %>
+  <% if utiliza.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(utiliza.errors.count, "error") %> prohibited this utiliza from being saved:</h2>
+
+      <ul>
+      <% utiliza.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.text_field :id_usuario, id: :utiliza_id_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_fabricacao %>
+    <%= form.text_field :id_fabricacao, id: :utiliza_id_fabricacao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

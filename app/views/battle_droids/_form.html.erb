@@ -1,0 +1,27 @@
+<%= form_with(model: battle_droid, local: true) do |form| %>
+  <% if battle_droid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(battle_droid.errors.count, "error") %> prohibited this battle_droid from being saved:</h2>
+
+      <ul>
+      <% battle_droid.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_fabricacao %>
+    <%= form.text_field :id_fabricacao, id: :battle_droid_id_fabricacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_arma %>
+    <%= form.text_field :tipo_arma, id: :battle_droid_tipo_arma %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

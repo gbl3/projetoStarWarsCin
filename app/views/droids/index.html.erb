@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Droids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id fabricacao</th>
+      <th>Serial name</th>
+      <th>Ano fabricacao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @droids.each do |droid| %>
+      <tr>
+        <td><%= droid.id_fabricacao %></td>
+        <td><%= droid.serial_name %></td>
+        <td><%= droid.ano_fabricacao %></td>
+        <td><%= link_to 'Show', droid %></td>
+        <td><%= link_to 'Edit', edit_droid_path(droid) %></td>
+        <td><%= link_to 'Destroy', droid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Droid', new_droid_path %>
+<%= link_to 'voltar', root_path %>

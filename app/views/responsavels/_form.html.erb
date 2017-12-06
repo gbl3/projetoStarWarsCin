@@ -1,0 +1,32 @@
+<%= form_with(model: responsavel, local: true) do |form| %>
+  <% if responsavel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(responsavel.errors.count, "error") %> prohibited this responsavel from being saved:</h2>
+
+      <ul>
+      <% responsavel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cod_padawan %>
+    <%= form.text_field :cod_padawan, id: :responsavel_cod_padawan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :responsavel_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :planeta_origem %>
+    <%= form.text_field :planeta_origem, id: :responsavel_planeta_origem %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

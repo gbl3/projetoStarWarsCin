@@ -1,0 +1,2 @@
+module UsuarioDaForcasHelper
+end

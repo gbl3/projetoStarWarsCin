@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_templo: MyString
+  nome_templo: MyString
+  planeta: MyString
+
+two:
+  id_templo: MyString
+  nome_templo: MyString
+  planeta: MyString

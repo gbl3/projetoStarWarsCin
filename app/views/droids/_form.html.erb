@@ -1,0 +1,32 @@
+<%= form_with(model: droid, local: true) do |form| %>
+  <% if droid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(droid.errors.count, "error") %> prohibited this droid from being saved:</h2>
+
+      <ul>
+      <% droid.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_fabricacao %>
+    <%= form.text_field :id_fabricacao, id: :droid_id_fabricacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :serial_name %>
+    <%= form.text_field :serial_name, id: :droid_serial_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano_fabricacao %>
+    <%= form.text_field :ano_fabricacao, id: :droid_ano_fabricacao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

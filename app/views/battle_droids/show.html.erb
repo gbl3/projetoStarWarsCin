@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id fabricacao:</strong>
+  <%= @battle_droid.id_fabricacao %>
+</p>
+
+<p>
+  <strong>Tipo arma:</strong>
+  <%= @battle_droid.tipo_arma %>
+</p>
+
+<%= link_to 'Edit', edit_battle_droid_path(@battle_droid) %> |
+<%= link_to 'Back', battle_droids_path %>

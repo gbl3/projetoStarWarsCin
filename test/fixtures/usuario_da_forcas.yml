@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_usuario: MyString
+  id_sabre: MyString
+  planeta_origem: MyString
+  nome_usuario: MyString
+  data_nas: 2017-12-06
+
+two:
+  id_usuario: MyString
+  id_sabre: MyString
+  planeta_origem: MyString
+  nome_usuario: MyString
+  data_nas: 2017-12-06

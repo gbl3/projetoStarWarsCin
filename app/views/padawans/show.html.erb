@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod padawan:</strong>
+  <%= @padawan.cod_padawan %>
+</p>
+
+<p>
+  <strong>Id usuario j:</strong>
+  <%= @padawan.id_usuario_j %>
+</p>
+
+<p>
+  <strong>Nome pad:</strong>
+  <%= @padawan.nome_pad %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @padawan.idade %>
+</p>
+
+<%= link_to 'Edit', edit_padawan_path(@padawan) %> |
+<%= link_to 'Back', padawans_path %>

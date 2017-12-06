@@ -1,0 +1,2 @@
+class Padawan < ApplicationRecord
+end

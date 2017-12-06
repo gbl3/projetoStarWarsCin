@@ -1,0 +1,2 @@
+class UsuarioDaForca < ApplicationRecord
+end

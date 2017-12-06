@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_sabre: MyString
+  cristal: MyString
+  local_origem: MyString
+  cor: MyString
+  data_criacao: 2017-12-06
+
+two:
+  id_sabre: MyString
+  cristal: MyString
+  local_origem: MyString
+  cor: MyString
+  data_criacao: 2017-12-06

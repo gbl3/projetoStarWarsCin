@@ -1,0 +1,27 @@
+<%= form_with(model: num_comunicador, local: true) do |form| %>
+  <% if num_comunicador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(num_comunicador.errors.count, "error") %> prohibited this num_comunicador from being saved:</h2>
+
+      <ul>
+      <% num_comunicador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :n_comunicador %>
+    <%= form.text_field :n_comunicador, id: :num_comunicador_n_comunicador %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.text_field :id_usuario, id: :num_comunicador_id_usuario %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

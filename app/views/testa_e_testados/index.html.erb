@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Testa E Testados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id usuario j</th>
+      <th>Id templo</th>
+      <th>Cod padawan</th>
+      <th>Resultado</th>
+      <th>Data teste</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testa_e_testados.each do |testa_e_testado| %>
+      <tr>
+        <td><%= testa_e_testado.id_usuario_j %></td>
+        <td><%= testa_e_testado.id_templo %></td>
+        <td><%= testa_e_testado.cod_padawan %></td>
+        <td><%= testa_e_testado.resultado %></td>
+        <td><%= testa_e_testado.data_teste %></td>
+        <td><%= link_to 'Show', testa_e_testado %></td>
+        <td><%= link_to 'Edit', edit_testa_e_testado_path(testa_e_testado) %></td>
+        <td><%= link_to 'Destroy', testa_e_testado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Testa E Testado', new_testa_e_testado_path %>
+<%= link_to 'voltar', root_path %>

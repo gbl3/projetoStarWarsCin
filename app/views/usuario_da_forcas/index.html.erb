@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuario Da Forcas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id usuario</th>
+      <th>Id sabre</th>
+      <th>Planeta origem</th>
+      <th>Nome usuario</th>
+      <th>Data nas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_da_forcas.each do |usuario_da_forca| %>
+      <tr>
+        <td><%= usuario_da_forca.id_usuario %></td>
+        <td><%= usuario_da_forca.id_sabre %></td>
+        <td><%= usuario_da_forca.planeta_origem %></td>
+        <td><%= usuario_da_forca.nome_usuario %></td>
+        <td><%= usuario_da_forca.data_nas %></td>
+        <td><%= link_to 'Show', usuario_da_forca %></td>
+        <td><%= link_to 'Edit', edit_usuario_da_forca_path(usuario_da_forca) %></td>
+        <td><%= link_to 'Destroy', usuario_da_forca, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario Da Forca', new_usuario_da_forca_path %>
+<%= link_to 'voltar', root_path %>

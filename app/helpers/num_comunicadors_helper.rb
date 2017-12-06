@@ -1,0 +1,2 @@
+module NumComunicadorsHelper
+end

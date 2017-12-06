@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod padawan:</strong>
+  <%= @responsavel.cod_padawan %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @responsavel.nome %>
+</p>
+
+<p>
+  <strong>Planeta origem:</strong>
+  <%= @responsavel.planeta_origem %>
+</p>
+
+<%= link_to 'Edit', edit_responsavel_path(@responsavel) %> |
+<%= link_to 'Back', responsavels_path %>

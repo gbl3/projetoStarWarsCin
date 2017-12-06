@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id usuario j:</strong>
+  <%= @jedi.id_usuario_j %>
+</p>
+
+<p>
+  <strong>Ordem:</strong>
+  <%= @jedi.ordem %>
+</p>
+
+<p>
+  <strong>Classe jedi:</strong>
+  <%= @jedi.classe_jedi %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @jedi.idade %>
+</p>
+
+<%= link_to 'Edit', edit_jedi_path(@jedi) %> |
+<%= link_to 'Back', jedis_path %>

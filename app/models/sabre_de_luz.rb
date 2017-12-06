@@ -1,0 +1,2 @@
+class SabreDeLuz < ApplicationRecord
+end

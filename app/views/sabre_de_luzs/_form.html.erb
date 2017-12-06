@@ -1,0 +1,42 @@
+<%= form_with(model: sabre_de_luz, local: true) do |form| %>
+  <% if sabre_de_luz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sabre_de_luz.errors.count, "error") %> prohibited this sabre_de_luz from being saved:</h2>
+
+      <ul>
+      <% sabre_de_luz.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_sabre %>
+    <%= form.text_field :id_sabre, id: :sabre_de_luz_id_sabre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cristal %>
+    <%= form.text_field :cristal, id: :sabre_de_luz_cristal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :local_origem %>
+    <%= form.text_field :local_origem, id: :sabre_de_luz_local_origem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cor %>
+    <%= form.text_field :cor, id: :sabre_de_luz_cor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_criacao %>
+    <%= form.date_select :data_criacao, id: :sabre_de_luz_data_criacao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

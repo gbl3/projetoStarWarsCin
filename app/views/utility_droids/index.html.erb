@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Utility Droids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id fabricacao</th>
+      <th>Especialidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @utility_droids.each do |utility_droid| %>
+      <tr>
+        <td><%= utility_droid.id_fabricacao %></td>
+        <td><%= utility_droid.especialidade %></td>
+        <td><%= link_to 'Show', utility_droid %></td>
+        <td><%= link_to 'Edit', edit_utility_droid_path(utility_droid) %></td>
+        <td><%= link_to 'Destroy', utility_droid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Utility Droid', new_utility_droid_path %>
+<%= link_to 'voltar', root_path %>
